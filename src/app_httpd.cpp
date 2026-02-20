@@ -711,8 +711,7 @@ static esp_err_t benchmark_handler(httpd_req_t *req) {
 </head>
 <body>
   <div class="container">
-    <h1>Benchmark Dashboard</h1>
-    <p>Optimize your ESP32-CAM performance</p>
+    <h1>ESP32-CAM OV3660 BenchMark</h1>
     
     <div class="fps-display" id="fps">-- FPS</div>
     
