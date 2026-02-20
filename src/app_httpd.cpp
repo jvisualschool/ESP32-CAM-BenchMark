@@ -696,17 +696,17 @@ static esp_err_t benchmark_handler(httpd_req_t *req) {
   <style>
     * { box-sizing: border-box; }
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #fff; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
-    h1 { margin-bottom: 5px; color: #4CAF50; }
+    h1 { margin-bottom: 5px; color: #3b82f6; }
     .container { background: #1e1e1e; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); max-width: 800px; width: 100%; text-align: center; }
-    .fps-display { font-size: 4em; font-weight: bold; color: #00e676; margin: 20px 0; }
-    img { max-width: 100%; border: 2px solid #333; border-radius: 8px; margin-bottom: 20px; }
+    .fps-display { font-size: 4em; font-weight: bold; color: #60a5fa; margin: 20px auto; background: #000; padding: 10px 30px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.8); border: 1px solid #333; }
+    img { display: block; margin: 0 auto 20px auto; max-width: 100%; border: 2px solid #333; border-radius: 8px; }
     .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left; }
     .control-group { background: #2c2c2c; padding: 15px; border-radius: 8px; }
     label { font-size: 0.9em; color: #aaa; margin-bottom: 5px; display: block; }
     select, input[type="range"] { width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #444; background: #222; color: #fff; }
-    .btn { background: #4CAF50; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 1em; width: 100%; margin-top: 10px; transition: background 0.3s;}
-    .btn:hover { background: #45a049; }
-    .status { margin-top: 10px; font-size: 0.8em; color: #ffeb3b; }
+    .btn { background: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 1em; width: 100%; margin-top: 10px; transition: background 0.3s;}
+    .btn:hover { background: #1d4ed8; }
+    .status { margin-top: 10px; font-size: 0.8em; color: #93c5fd; }
   </style>
 </head>
 <body>
@@ -717,7 +717,7 @@ static esp_err_t benchmark_handler(httpd_req_t *req) {
     <div class="fps-display" id="fps">-- FPS</div>
     
     <!-- Port 81 is stream port -->
-    <img id="stream" src="" crossorigin>
+    <img id="stream" src="">
     
     <div class="controls">
       <div class="control-group">
